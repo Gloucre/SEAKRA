@@ -147,11 +147,16 @@
             background-color: #d8430d !important;
         }
 
-        /* HERO SECTION COMPACTO PARA PRIMERA VISTA */
+        /* HERO SECTION CON DEGRADADO Y ALTURA COMPLETA */
         .hero {
-            background: linear-gradient(135deg, var(--navy) 0%, #162447 100%);
+            background: linear-gradient(180deg, #FFFFFF 0%, #0B132B 85%);
             color: var(--white);
-            padding: 25px 16px 35px;
+            min-height: calc(100dvh - 52px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px;
             text-align: center;
             border-bottom: 4px solid var(--orange);
         }
@@ -159,44 +164,45 @@
         .hero-container {
             max-width: 800px;
             margin: 0 auto;
+            width: 100%;
         }
 
         .hero-logo-box {
-            margin-bottom: 12px;
+            margin-bottom: 16px;
             display: inline-block;
             background: transparent;
             padding: 0;
         }
 
         .hero-logo-img {
-            max-width: 180px;
+            max-width: 200px;
             width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
         }
 
         .hero-badge {
             display: inline-block;
-            background-color: rgba(255, 90, 31, 0.15);
+            background-color: rgba(255, 90, 31, 0.12);
             color: var(--orange);
             border: 1px solid var(--orange);
-            padding: 4px 12px;
+            padding: 5px 14px;
             border-radius: 16px;
-            font-size: 10px;
+            font-size: 10.5px;
             font-weight: 800;
             letter-spacing: 1.5px;
             text-transform: uppercase;
-            margin-bottom: 10px;
+            margin-bottom: 14px;
         }
 
         .hero-tagline {
-            font-size: 12px;
+            font-size: 12.5px;
             font-weight: 700;
             color: var(--steel-light);
             letter-spacing: 2px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             text-transform: uppercase;
         }
 
@@ -204,40 +210,41 @@
             display: inline-block;
             background-color: rgba(255, 255, 255, 0.08);
             color: #E2E8F0;
-            padding: 6px 12px;
+            padding: 7px 14px;
             border-radius: 4px;
-            font-size: 11px;
+            font-size: 11.5px;
             font-weight: 600;
-            margin-bottom: 12px;
+            margin-bottom: 16px;
         }
 
         .hero p {
-            font-size: 13px;
+            font-size: 13.5px;
             color: #CBD5E1;
             max-width: 680px;
-            margin: 0 auto 18px;
-            line-height: 1.4;
+            margin: 0 auto 24px;
+            line-height: 1.45;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 10px;
+            flex-direction: column;
+            gap: 12px;
+            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
         }
 
         .btn-primary {
             background-color: var(--orange);
             color: var(--white);
-            padding: 12px 22px;
+            padding: 13px 24px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 700;
-            font-size: 14px;
+            font-size: 14.5px;
             transition: background 0.3s ease;
             width: 100%;
             max-width: 320px;
-            box-shadow: 0 4px 12px rgba(255, 90, 31, 0.3);
+            box-shadow: 0 4px 14px rgba(255, 90, 31, 0.35);
         }
 
         .btn-primary:hover {
@@ -248,11 +255,11 @@
             background-color: transparent;
             color: var(--white);
             border: 1px solid var(--steel-light);
-            padding: 10px 22px;
+            padding: 11px 24px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 700;
-            font-size: 13px;
+            font-size: 13.5px;
             transition: all 0.3s ease;
             width: 100%;
             max-width: 320px;
@@ -265,7 +272,7 @@
 
         /* SECCIONES COMUNES */
         section {
-            padding: 50px 16px;
+            padding: 60px 16px;
         }
 
         .section-container {
@@ -488,7 +495,7 @@
             color: var(--steel-light);
         }
 
-        /* AJUSTES ESPECÍFICOS PARA PANTALLAS MÓVILES (PRIMERA VISTA) */
+        /* RESPONSIVE DESIGN EN MÓVILES */
         @media (max-width: 768px) {
             .mobile-menu-btn {
                 display: block;
@@ -504,7 +511,7 @@
                 background-color: rgba(11, 19, 43, 0.98);
                 border-bottom: 2px solid var(--orange);
                 padding: 16px;
-                gap: 14px;
+                gap: 16px;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.3);
             }
 
@@ -513,45 +520,36 @@
             }
 
             .hero {
-                padding: 18px 12px 25px;
+                min-height: calc(100dvh - 52px);
+                padding: 24px 14px;
             }
 
             .hero-logo-img {
-                max-width: 125px;
+                max-width: 150px;
             }
 
             .hero-badge {
-                font-size: 9px;
-                padding: 3px 10px;
-                margin-bottom: 8px;
-            }
-
-            .hero-tagline {
-                font-size: 10.5px;
-                letter-spacing: 1.5px;
-                margin-bottom: 8px;
-            }
-
-            .hero-descriptor {
                 font-size: 9.5px;
-                padding: 4px 8px;
+                padding: 4px 11px;
                 margin-bottom: 10px;
             }
 
+            .hero-tagline {
+                font-size: 11px;
+                letter-spacing: 1.5px;
+                margin-bottom: 10px;
+            }
+
+            .hero-descriptor {
+                font-size: 10px;
+                padding: 5px 10px;
+                margin-bottom: 12px;
+            }
+
             .hero p {
-                font-size: 12px;
-                line-height: 1.35;
-                margin-bottom: 14px;
-            }
-
-            .btn-primary {
-                padding: 11px 18px;
-                font-size: 13px;
-            }
-
-            .btn-secondary {
-                padding: 9px 18px;
-                font-size: 12px;
+                font-size: 12.5px;
+                line-height: 1.4;
+                margin-bottom: 18px;
             }
 
             .phase-item {
@@ -587,16 +585,16 @@
                 ☰
             </button>
 
+            <!-- MENÚ SIN METODOLOGÍA -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="#servicios" onclick="closeMobileMenu()">Servicios</a></li>
-                <li><a href="#metodologia" onclick="closeMobileMenu()">Metodología</a></li>
                 <li><a href="#cobertura" onclick="closeMobileMenu()">Cobertura</a></li>
                 <li><a href="#contacto" class="btn-nav" onclick="closeMobileMenu()">Contactar</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- HERO SECTION COMPACTO -->
+    <!-- HERO SECTION DEGRADADO Y AJUSTADO A PANTALLA COMPLETA -->
     <section class="hero">
         <div class="hero-container">
             
@@ -605,7 +603,7 @@
             </div>
 
             <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
-            <div class="hero-tagline">EXPERIENCIAS EN TRABAJOS BAJO LA SUPERFICIE.</div>
+            <div class="hero-tagline">ENGINEERING EXPERTISE BENEATH THE SURFACE.</div>
             <div class="hero-descriptor">Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques</div>
             <p>Diagnóstico no invasivo con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
             <div class="hero-buttons">
