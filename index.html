@@ -12,19 +12,21 @@
     <!-- Fuentes Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <style>
         :root {
+            --navy-dark: #070C1A;
             --navy: #0B132B;
+            --navy-light: #162447;
             --orange: #FF5A1F;
-            --steel: #4C657D;
-            --steel-light: #8D99AE;
+            --orange-hover: #E0480F;
+            --steel-light: #94A3B8;
             --light-bg: #F8FAFC;
             --white: #FFFFFF;
             --border-color: #E2E8F0;
-            --text-dark: #1E293B;
-            --text-muted: #64748B;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
         }
 
         * {
@@ -53,15 +55,14 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: rgba(11, 19, 43, 0.98);
-            backdrop-filter: blur(8px);
+            background-color: var(--navy-dark);
             border-bottom: 2px solid var(--orange);
         }
 
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 8px 16px;
+            padding: 10px 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,7 +77,7 @@
         }
 
         .nav-logo-img {
-            height: 34px;
+            height: 36px;
             width: auto;
             object-fit: contain;
         }
@@ -87,7 +88,7 @@
         }
 
         .brand-logo .title {
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 900;
             color: var(--orange);
             letter-spacing: 1px;
@@ -95,7 +96,7 @@
         }
 
         .brand-logo .sub {
-            font-size: 7.5px;
+            font-size: 8px;
             font-weight: 700;
             color: var(--white);
             letter-spacing: 2px;
@@ -108,7 +109,7 @@
             background: none;
             border: none;
             color: var(--white);
-            font-size: 24px;
+            font-size: 26px;
             cursor: pointer;
             padding: 4px;
             line-height: 1;
@@ -116,7 +117,7 @@
 
         .nav-links {
             display: flex;
-            gap: 20px;
+            gap: 22px;
             align-items: center;
             list-style: none;
         }
@@ -124,7 +125,7 @@
         .nav-links a {
             color: var(--white);
             text-decoration: none;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 500;
             transition: color 0.3s ease;
         }
@@ -136,7 +137,7 @@
         .btn-nav {
             background-color: var(--orange);
             color: var(--white) !important;
-            padding: 7px 16px;
+            padding: 8px 18px;
             border-radius: 4px;
             font-weight: 700 !important;
             transition: background 0.3s ease !important;
@@ -144,19 +145,19 @@
         }
 
         .btn-nav:hover {
-            background-color: #d8430d !important;
+            background-color: var(--orange-hover) !important;
         }
 
-        /* HERO SECTION CON DEGRADADO Y ALTURA COMPLETA */
+        /* HERO SECTION: ALTO CONTRASTE Y LEGIBILIDAD */
         .hero {
-            background: linear-gradient(180deg, #FFFFFF 0%, #0B132B 85%);
+            background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
-            min-height: calc(100dvh - 52px);
+            min-height: calc(100dvh - 58px);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 30px 16px;
+            padding: 24px 16px;
             text-align: center;
             border-bottom: 4px solid var(--orange);
         }
@@ -170,59 +171,61 @@
         .hero-logo-box {
             margin-bottom: 16px;
             display: inline-block;
-            background: transparent;
-            padding: 0;
         }
 
         .hero-logo-img {
-            max-width: 200px;
+            max-width: 220px;
             width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
         }
 
         .hero-badge {
             display: inline-block;
-            background-color: rgba(255, 90, 31, 0.12);
-            color: var(--orange);
-            border: 1px solid var(--orange);
-            padding: 5px 14px;
-            border-radius: 16px;
-            font-size: 10.5px;
+            background-color: var(--orange);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 11px;
             font-weight: 800;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-bottom: 14px;
+            box-shadow: 0 2px 8px rgba(255, 90, 31, 0.3);
         }
 
         .hero-tagline {
-            font-size: 12.5px;
-            font-weight: 700;
-            color: var(--steel-light);
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--white);
             letter-spacing: 2px;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-transform: uppercase;
+            opacity: 0.9;
         }
 
         .hero-descriptor {
             display: inline-block;
-            background-color: rgba(255, 255, 255, 0.08);
-            color: #E2E8F0;
-            padding: 7px 14px;
-            border-radius: 4px;
-            font-size: 11.5px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #F1F5F9;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
             font-weight: 600;
             margin-bottom: 16px;
+            line-height: 1.4;
         }
 
         .hero p {
-            font-size: 13.5px;
-            color: #CBD5E1;
+            font-size: 14.5px;
+            color: #E2E8F0;
             max-width: 680px;
             margin: 0 auto 24px;
-            line-height: 1.45;
+            line-height: 1.5;
+            font-weight: 400;
         }
 
         .hero-buttons {
@@ -236,38 +239,40 @@
         .btn-primary {
             background-color: var(--orange);
             color: var(--white);
-            padding: 13px 24px;
+            padding: 15px 28px;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 14.5px;
-            transition: background 0.3s ease;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 16px;
+            transition: all 0.3s ease;
             width: 100%;
-            max-width: 320px;
-            box-shadow: 0 4px 14px rgba(255, 90, 31, 0.35);
+            max-width: 340px;
+            box-shadow: 0 4px 16px rgba(255, 90, 31, 0.4);
+            letter-spacing: 0.5px;
         }
 
         .btn-primary:hover {
-            background-color: #d8430d;
+            background-color: var(--orange-hover);
+            transform: translateY(-2px);
         }
 
         .btn-secondary {
-            background-color: transparent;
+            background-color: rgba(255, 255, 255, 0.05);
             color: var(--white);
-            border: 1px solid var(--steel-light);
-            padding: 11px 24px;
+            border: 1.5px solid var(--steel-light);
+            padding: 12px 28px;
             text-decoration: none;
-            border-radius: 4px;
+            border-radius: 6px;
             font-weight: 700;
-            font-size: 13.5px;
+            font-size: 14px;
             transition: all 0.3s ease;
             width: 100%;
-            max-width: 320px;
+            max-width: 340px;
         }
 
         .btn-secondary:hover {
             border-color: var(--white);
-            background-color: rgba(255, 255, 255, 0.08);
+            background-color: rgba(255, 255, 255, 0.12);
         }
 
         /* SECCIONES COMUNES */
@@ -286,7 +291,7 @@
         }
 
         .section-header h2 {
-            font-size: 22px;
+            font-size: 24px;
             font-weight: 800;
             color: var(--navy);
             text-transform: uppercase;
@@ -310,7 +315,7 @@
         .section-header p {
             color: var(--text-muted);
             margin-top: 8px;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         /* SERVICIOS */
@@ -338,13 +343,13 @@
         }
 
         .service-card h3 {
-            font-size: 16px;
+            font-size: 17px;
             color: var(--navy);
             margin-bottom: 10px;
         }
 
         .service-card p {
-            font-size: 13px;
+            font-size: 14px;
             color: var(--text-muted);
             line-height: 1.5;
         }
@@ -373,7 +378,7 @@
             background-color: var(--navy);
             color: var(--orange);
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 22px;
             font-weight: 900;
             padding: 20px;
             display: flex;
@@ -383,17 +388,17 @@
         }
 
         .phase-content {
-            padding: 16px 20px;
+            padding: 18px 20px;
         }
 
         .phase-content h3 {
-            font-size: 15px;
+            font-size: 16px;
             color: var(--navy);
             margin-bottom: 4px;
         }
 
         .phase-content p {
-            font-size: 13px;
+            font-size: 14px;
             color: var(--text-muted);
         }
 
@@ -409,9 +414,9 @@
         .location-badge {
             background-color: var(--navy);
             color: var(--white);
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
-            padding: 6px 14px;
+            padding: 8px 16px;
             border-radius: 4px;
             letter-spacing: 0.5px;
         }
@@ -426,19 +431,19 @@
         }
 
         .normative-box h3 {
-            font-size: 17px;
+            font-size: 18px;
             margin-bottom: 8px;
         }
 
         .normative-box p {
             color: #CBD5E1;
-            font-size: 13px;
+            font-size: 14px;
             line-height: 1.5;
         }
 
         /* FOOTER */
         footer {
-            background-color: var(--navy);
+            background-color: var(--navy-dark);
             color: var(--white);
             padding: 45px 16px 25px;
             border-top: 1px solid rgba(255,255,255,0.1);
@@ -454,14 +459,14 @@
         }
 
         .footer-logo-img {
-            max-width: 150px;
+            max-width: 160px;
             height: auto;
             display: block;
             margin-bottom: 12px;
         }
 
         .footer-col h4 {
-            font-size: 14px;
+            font-size: 15px;
             color: var(--white);
             margin-bottom: 12px;
             text-transform: uppercase;
@@ -471,7 +476,7 @@
 
         .footer-col p, .footer-col a {
             color: var(--steel-light);
-            font-size: 13px;
+            font-size: 13.5px;
             text-decoration: none;
             display: block;
             margin-bottom: 6px;
@@ -491,7 +496,7 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 10px;
-            font-size: 11px;
+            font-size: 12px;
             color: var(--steel-light);
         }
 
@@ -508,11 +513,11 @@
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background-color: rgba(11, 19, 43, 0.98);
+                background-color: var(--navy-dark);
                 border-bottom: 2px solid var(--orange);
-                padding: 16px;
+                padding: 18px;
                 gap: 16px;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.4);
             }
 
             .nav-links.active {
@@ -520,36 +525,46 @@
             }
 
             .hero {
-                min-height: calc(100dvh - 52px);
-                padding: 24px 14px;
+                min-height: calc(100dvh - 58px);
+                padding: 20px 16px;
             }
 
             .hero-logo-img {
-                max-width: 150px;
+                max-width: 170px;
             }
 
             .hero-badge {
-                font-size: 9.5px;
-                padding: 4px 11px;
-                margin-bottom: 10px;
-            }
-
-            .hero-tagline {
-                font-size: 11px;
-                letter-spacing: 1.5px;
-                margin-bottom: 10px;
-            }
-
-            .hero-descriptor {
                 font-size: 10px;
-                padding: 5px 10px;
+                padding: 5px 12px;
                 margin-bottom: 12px;
             }
 
+            .hero-tagline {
+                font-size: 11.5px;
+                letter-spacing: 1.5px;
+                margin-bottom: 12px;
+            }
+
+            .hero-descriptor {
+                font-size: 11.5px;
+                padding: 7px 12px;
+                margin-bottom: 14px;
+            }
+
             .hero p {
-                font-size: 12.5px;
-                line-height: 1.4;
-                margin-bottom: 18px;
+                font-size: 13.5px;
+                line-height: 1.45;
+                margin-bottom: 20px;
+            }
+
+            .btn-primary {
+                padding: 14px 22px;
+                font-size: 15px;
+            }
+
+            .btn-secondary {
+                padding: 11px 22px;
+                font-size: 13.5px;
             }
 
             .phase-item {
@@ -577,7 +592,7 @@
                 <img src="logo_seakra_solo.png" alt="SEAKRA Isotipo" class="nav-logo-img">
                 <div class="brand-text">
                     <div class="title">SEAKRA</div>
-                    <div class="sub">MARINE SERVICES</div>
+                    <div class="sub">MARITIME SERVICES</div>
                 </div>
             </a>
 
@@ -585,7 +600,6 @@
                 ☰
             </button>
 
-            <!-- MENÚ SIN METODOLOGÍA -->
             <ul class="nav-links" id="navLinks">
                 <li><a href="#servicios" onclick="closeMobileMenu()">Servicios</a></li>
                 <li><a href="#cobertura" onclick="closeMobileMenu()">Cobertura</a></li>
@@ -594,7 +608,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION DEGRADADO Y AJUSTADO A PANTALLA COMPLETA -->
+    <!-- HERO SECTION ALTO CONTRASTE -->
     <section class="hero">
         <div class="hero-container">
             
@@ -603,7 +617,7 @@
             </div>
 
             <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
-            <div class="hero-tagline">EXPERIENCIA EN TRABAJOS BAJOS LA SUPERFICIE.</div>
+            <div class="hero-tagline">EXPERIENCIA EN TRABAJOS BAJO LA SUPERFICIE.</div>
             <div class="hero-descriptor">Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques</div>
             <p>Diagnóstico con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
             <div class="hero-buttons">
@@ -702,7 +716,7 @@
         <div class="footer-container">
             <div class="footer-col">
                 <img src="logo_seakra.png" alt="SEAKRA Logo" class="footer-logo-img">
-                <p style="font-size: 12px;">Contratista especializado en operaciones submarinas, robótica e inspección técnica para el sector marítimo, portuario e industrial.</p>
+                <p style="font-size: 13px;">Contratista especializado en operaciones submarinas, robótica e inspección técnica para el sector marítimo, portuario e industrial.</p>
             </div>
             <div class="footer-col">
                 <h4>Oficina Técnica</h4>
@@ -720,7 +734,7 @@
         </div>
         <div class="footer-bottom">
             <span>© 2026 SEAKRA Marine Services. Todos los derechos reservados.</span>
-            <span>ENGINEERING EXPERTISE BENEATH THE SURFACE.</span>
+            <span>EXPERIENCIA EN TRABAJOS BAJO LA SUPERFICIE.</span>
         </div>
     </footer>
 
