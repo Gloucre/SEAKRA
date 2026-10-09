@@ -24,7 +24,7 @@
             --steel-light: #94A3B8;
             --light-bg: #F8FAFC;
             --white: #FFFFFF;
-            --border-color: #E2E8F0;
+            --border-color: #CBD5E1;
             --text-dark: #0F172A;
             --text-muted: #475569;
         }
@@ -148,7 +148,7 @@
             background-color: var(--orange-hover) !important;
         }
 
-        /* HERO SECTION: ALTO CONTRASTE Y LEGIBILIDAD */
+        /* HERO SECTION CON TONOS EQUILIBRADOS */
         .hero {
             background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
@@ -159,7 +159,7 @@
             align-items: center;
             padding: 24px 16px;
             text-align: center;
-            border-bottom: 4px solid var(--orange);
+            border-bottom: 3px solid rgba(255, 90, 31, 0.4);
         }
 
         .hero-container {
@@ -174,7 +174,7 @@
         }
 
         .hero-logo-img {
-            max-width: 220px;
+            max-width: 210px;
             width: 100%;
             height: auto;
             display: block;
@@ -182,46 +182,46 @@
             filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
         }
 
+        /* INSIGNIA REFINADA CON MENOS NARANJA */
         .hero-badge {
             display: inline-block;
-            background-color: var(--orange);
-            color: var(--white);
-            padding: 6px 14px;
+            background-color: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #E2E8F0;
+            padding: 5px 14px;
             border-radius: 20px;
-            font-size: 11px;
-            font-weight: 800;
+            font-size: 10.5px;
+            font-weight: 700;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             margin-bottom: 14px;
-            box-shadow: 0 2px 8px rgba(255, 90, 31, 0.3);
         }
 
         .hero-tagline {
-            font-size: 13px;
-            font-weight: 800;
-            color: var(--white);
+            font-size: 12.5px;
+            font-weight: 700;
+            color: var(--steel-light);
             letter-spacing: 2px;
             margin-bottom: 14px;
             text-transform: uppercase;
-            opacity: 0.9;
         }
 
         .hero-descriptor {
             display: inline-block;
-            background-color: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            background-color: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
             color: #F1F5F9;
             padding: 8px 16px;
             border-radius: 6px;
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 600;
             margin-bottom: 16px;
             line-height: 1.4;
         }
 
         .hero p {
-            font-size: 14.5px;
-            color: #E2E8F0;
+            font-size: 14px;
+            color: #CBD5E1;
             max-width: 680px;
             margin: 0 auto 24px;
             line-height: 1.5;
@@ -236,6 +236,7 @@
             justify-content: center;
         }
 
+        /* BOTÓN PRINCIPAL NARANJA DE ACCIÓN DIRECTA */
         .btn-primary {
             background-color: var(--orange);
             color: var(--white);
@@ -243,11 +244,11 @@
             text-decoration: none;
             border-radius: 6px;
             font-weight: 800;
-            font-size: 16px;
+            font-size: 15.5px;
             transition: all 0.3s ease;
             width: 100%;
             max-width: 340px;
-            box-shadow: 0 4px 16px rgba(255, 90, 31, 0.4);
+            box-shadow: 0 4px 16px rgba(255, 90, 31, 0.35);
             letter-spacing: 0.5px;
         }
 
@@ -441,6 +442,79 @@
             line-height: 1.5;
         }
 
+        /* SECCIÓN DE FORMULARIO DE CONTACTO DIRECTO */
+        .contact-section {
+            background-color: var(--light-bg);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-form-card {
+            background-color: var(--white);
+            padding: 30px 24px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            border-top: 4px solid var(--orange);
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--white);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--orange);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .btn-submit {
+            background-color: var(--orange);
+            color: var(--white);
+            border: none;
+            padding: 14px 28px;
+            border-radius: 4px;
+            font-weight: 800;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--orange-hover);
+        }
+
         /* FOOTER */
         footer {
             background-color: var(--navy-dark);
@@ -530,41 +604,11 @@
             }
 
             .hero-logo-img {
-                max-width: 170px;
+                max-width: 165px;
             }
 
-            .hero-badge {
-                font-size: 10px;
-                padding: 5px 12px;
-                margin-bottom: 12px;
-            }
-
-            .hero-tagline {
-                font-size: 11.5px;
-                letter-spacing: 1.5px;
-                margin-bottom: 12px;
-            }
-
-            .hero-descriptor {
-                font-size: 11.5px;
-                padding: 7px 12px;
-                margin-bottom: 14px;
-            }
-
-            .hero p {
-                font-size: 13.5px;
-                line-height: 1.45;
-                margin-bottom: 20px;
-            }
-
-            .btn-primary {
-                padding: 14px 22px;
-                font-size: 15px;
-            }
-
-            .btn-secondary {
-                padding: 11px 22px;
-                font-size: 13.5px;
+            .form-row {
+                grid-template-columns: 1fr;
             }
 
             .phase-item {
@@ -603,12 +647,12 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#servicios" onclick="closeMobileMenu()">Servicios</a></li>
                 <li><a href="#cobertura" onclick="closeMobileMenu()">Cobertura</a></li>
-                <li><a href="#contacto" class="btn-nav" onclick="closeMobileMenu()">Contactar</a></li>
+                <li><a href="#solicitar" class="btn-nav" onclick="closeMobileMenu()">Contactar</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- HERO SECTION ALTO CONTRASTE -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-container">
             
@@ -617,11 +661,12 @@
             </div>
 
             <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
-            <div class="hero-tagline">EXPERIENCIA EN TRABAJOS BAJO LA SUPERFICIE.</div>
+            <div class="hero-tagline">ENGINEERING EXPERTISE BENEATH THE SURFACE.</div>
             <div class="hero-descriptor">Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques</div>
-            <p>Diagnóstico con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
+            <p>Diagnóstico no invasivo con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
             <div class="hero-buttons">
-                <a href="#contacto" class="btn-primary">Solicitar Inspección Técnica</a>
+                <!-- ENLACE DIRECTO AL FORMULARIO DE SOLICITUD -->
+                <a href="#solicitar" class="btn-primary">Solicitar Inspección Técnica</a>
                 <a href="mailto:operaciones@seakra.com" class="btn-secondary">Contacto Directo</a>
             </div>
         </div>
@@ -711,6 +756,55 @@
         </div>
     </section>
 
+    <!-- SECCIÓN FORMULARIO DE CONTACTO / SOLICITUD -->
+    <section id="solicitar" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Solicitud de Inspección Técnica</h2>
+                <p>Rellene los datos de la intervención y nuestro equipo técnico le responderá en menos de 2 horas.</p>
+            </div>
+
+            <div class="contact-form-card">
+                <form action="mailto:operaciones@seakra.com" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre / Empresa *</label>
+                            <input type="text" id="nombre" name="Nombre" class="form-control" placeholder="Ej. Marina Alicante / Juan Pérez" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contacto_directo">Teléfono / Email *</label>
+                            <input type="text" id="contacto_directo" name="Contacto" class="form-control" placeholder="Ej. +34 600 000 000" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="servicio">Servicios Requeridos</label>
+                            <select id="servicio" name="Servicio" class="form-control">
+                                <option value="Inspeccion ROV">Inspección Submarina ROV</option>
+                                <option value="Buceo Tecnico">Buceo Profesional Técnico</option>
+                                <option value="Limpieza Casco">Limpieza de Casco / Hélices</option>
+                                <option value="Fondeo Amarres">Revisión Fondeos y Amarres</option>
+                                <option value="Urgencia">Asistencia de Urgencia en Puerto</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="ubicacion">Puerto / Ubicación</label>
+                            <input type="text" id="ubicacion" name="Ubicacion" class="form-control" placeholder="Ej. Puerto de Dénia / Alicante">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Detalles de la Inspección / Avería</label>
+                        <textarea id="mensaje" name="Mensaje" class="form-control" rows="4" placeholder="Describa brevemente la embarcación, eslora o requerimiento técnico..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Solicitud Técnica</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer id="contacto">
         <div class="footer-container">
@@ -734,7 +828,7 @@
         </div>
         <div class="footer-bottom">
             <span>© 2026 SEAKRA Marine Services. Todos los derechos reservados.</span>
-            <span>EXPERIENCIA EN TRABAJOS BAJO LA SUPERFICIE.</span>
+            <span>ENGINEERING EXPERTISE BENEATH THE SURFACE.</span>
         </div>
     </footer>
 
