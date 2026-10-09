@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,12 +9,10 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo_seakra_solo.png">
 
-
     <!-- Fuentes Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
 
     <style>
         :root {
@@ -29,33 +27,28 @@
             --text-muted: #64748B;
         }
 
-
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
-
         html {
             scroll-behavior: smooth;
         }
-
 
         body {
             font-family: 'Roboto', sans-serif;
             color: var(--text-dark);
             background-color: var(--white);
-            line-height: 1.6;
+            line-height: 1.5;
         }
-
 
         h1, h2, h3, .brand-font {
             font-family: 'Montserrat', sans-serif;
         }
 
-
-        /* NAVEGACIÓN STICKY CON MENÚ MÓVIL */
+        /* NAVEGACIÓN STICKY */
         header {
             position: sticky;
             top: 0;
@@ -65,269 +58,236 @@
             border-bottom: 2px solid var(--orange);
         }
 
-
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 10px 20px;
+            padding: 8px 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: relative;
         }
 
-
         .brand-logo {
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
         }
 
-
         .nav-logo-img {
-            height: 40px;
+            height: 34px;
             width: auto;
             object-fit: contain;
         }
-
 
         .brand-logo .brand-text {
             display: flex;
             flex-direction: column;
         }
 
-
         .brand-logo .title {
-            font-size: 20px;
+            font-size: 18px;
             font-weight: 900;
             color: var(--orange);
             letter-spacing: 1px;
             line-height: 1;
         }
 
-
         .brand-logo .sub {
-            font-size: 8px;
+            font-size: 7.5px;
             font-weight: 700;
             color: var(--white);
-            letter-spacing: 2.5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            margin-top: 3px;
+            margin-top: 2px;
         }
 
-
-        /* BOTÓN MENÚ MÓVIL */
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
             color: var(--white);
-            font-size: 26px;
+            font-size: 24px;
             cursor: pointer;
-            padding: 5px;
+            padding: 4px;
             line-height: 1;
         }
 
-
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 20px;
             align-items: center;
             list-style: none;
         }
 
-
         .nav-links a {
             color: var(--white);
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
             transition: color 0.3s ease;
         }
-
 
         .nav-links a:hover {
             color: var(--orange);
         }
 
-
         .btn-nav {
             background-color: var(--orange);
             color: var(--white) !important;
-            padding: 9px 20px;
+            padding: 7px 16px;
             border-radius: 4px;
             font-weight: 700 !important;
             transition: background 0.3s ease !important;
             text-align: center;
         }
 
-
         .btn-nav:hover {
             background-color: #d8430d !important;
         }
 
-
-        /* HERO SECTION */
+        /* HERO SECTION COMPACTO PARA PRIMERA VISTA */
         .hero {
             background: linear-gradient(135deg, var(--navy) 0%, #162447 100%);
             color: var(--white);
-            padding: 60px 20px 80px;
+            padding: 25px 16px 35px;
             text-align: center;
-            border-bottom: 5px solid var(--orange);
+            border-bottom: 4px solid var(--orange);
         }
 
-
         .hero-container {
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
-
         .hero-logo-box {
-            margin-bottom: 25px;
+            margin-bottom: 12px;
             display: inline-block;
             background: transparent;
             padding: 0;
         }
 
-
         .hero-logo-img {
-            max-width: 280px;
+            max-width: 180px;
             width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
-            filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
         }
-
 
         .hero-badge {
             display: inline-block;
             background-color: rgba(255, 90, 31, 0.15);
             color: var(--orange);
             border: 1px solid var(--orange);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 11px;
+            padding: 4px 12px;
+            border-radius: 16px;
+            font-size: 10px;
             font-weight: 800;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
-
-
-        .hero h1 {
-            font-size: 38px;
-            font-weight: 900;
-            line-height: 1.25;
-            margin-bottom: 12px;
-        }
-
 
         .hero-tagline {
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 700;
             color: var(--steel-light);
-            letter-spacing: 2.5px;
-            margin-bottom: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
             text-transform: uppercase;
         }
-
 
         .hero-descriptor {
             display: inline-block;
             background-color: rgba(255, 255, 255, 0.08);
             color: #E2E8F0;
-            padding: 8px 18px;
+            padding: 6px 12px;
             border-radius: 4px;
-            font-size: 13px;
+            font-size: 11px;
             font-weight: 600;
-            margin-bottom: 25px;
+            margin-bottom: 12px;
         }
-
 
         .hero p {
-            font-size: 16px;
+            font-size: 13px;
             color: #CBD5E1;
-            max-width: 750px;
-            margin: 0 auto 35px;
+            max-width: 680px;
+            margin: 0 auto 18px;
+            line-height: 1.4;
         }
-
 
         .hero-buttons {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             justify-content: center;
             flex-wrap: wrap;
         }
 
-
         .btn-primary {
             background-color: var(--orange);
             color: var(--white);
-            padding: 14px 28px;
+            padding: 12px 22px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 14px;
             transition: background 0.3s ease;
+            width: 100%;
+            max-width: 320px;
+            box-shadow: 0 4px 12px rgba(255, 90, 31, 0.3);
         }
-
 
         .btn-primary:hover {
             background-color: #d8430d;
         }
 
-
         .btn-secondary {
             background-color: transparent;
             color: var(--white);
             border: 1px solid var(--steel-light);
-            padding: 14px 28px;
+            padding: 10px 22px;
             text-decoration: none;
             border-radius: 4px;
             font-weight: 700;
-            font-size: 15px;
+            font-size: 13px;
             transition: all 0.3s ease;
+            width: 100%;
+            max-width: 320px;
         }
-
 
         .btn-secondary:hover {
             border-color: var(--white);
             background-color: rgba(255, 255, 255, 0.08);
         }
 
-
         /* SECCIONES COMUNES */
         section {
-            padding: 70px 20px;
+            padding: 50px 16px;
         }
 
-
         .section-container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
-
         .section-header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
         }
 
-
         .section-header h2 {
-            font-size: 26px;
+            font-size: 22px;
             font-weight: 800;
             color: var(--navy);
             text-transform: uppercase;
             letter-spacing: 0.5px;
             position: relative;
             display: inline-block;
-            padding-bottom: 10px;
+            padding-bottom: 8px;
         }
-
 
         .section-header h2::after {
             content: '';
@@ -335,232 +295,204 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            width: 50px;
             height: 3px;
             background-color: var(--orange);
         }
 
-
         .section-header p {
             color: var(--text-muted);
-            margin-top: 10px;
-            font-size: 15px;
+            margin-top: 8px;
+            font-size: 14px;
         }
-
 
         /* SERVICIOS */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
         }
-
 
         .service-card {
             background-color: var(--light-bg);
             border-radius: 6px;
-            padding: 30px 25px;
+            padding: 24px 20px;
             border-top: 4px solid var(--navy);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
         }
-
 
         .service-card.highlight {
             border-top-color: var(--orange);
         }
 
-
         .service-card h3 {
-            font-size: 18px;
+            font-size: 16px;
             color: var(--navy);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
-
 
         .service-card p {
-            font-size: 14px;
+            font-size: 13px;
             color: var(--text-muted);
-            line-height: 1.6;
+            line-height: 1.5;
         }
-
 
         /* METODOLOGÍA */
         .methodology {
             background-color: var(--light-bg);
         }
 
-
         .phases-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 16px;
         }
-
 
         .phase-item {
             display: flex;
             background-color: var(--white);
             border-radius: 6px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
             border: 1px solid var(--border-color);
         }
-
 
         .phase-number {
             background-color: var(--navy);
             color: var(--orange);
             font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 900;
-            padding: 25px;
+            padding: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            min-width: 75px;
+            min-width: 65px;
         }
-
 
         .phase-content {
-            padding: 20px 25px;
+            padding: 16px 20px;
         }
-
 
         .phase-content h3 {
-            font-size: 17px;
+            font-size: 15px;
             color: var(--navy);
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
-
 
         .phase-content p {
-            font-size: 14px;
+            font-size: 13px;
             color: var(--text-muted);
         }
-
 
         /* COBERTURA & NORMATIVA */
         .coverage-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 12px;
-            margin-top: 25px;
+            gap: 10px;
+            margin-top: 20px;
         }
-
 
         .location-badge {
             background-color: var(--navy);
             color: var(--white);
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 700;
-            padding: 8px 16px;
+            padding: 6px 14px;
             border-radius: 4px;
             letter-spacing: 0.5px;
         }
 
-
         .normative-box {
             background-color: var(--navy);
             color: var(--white);
-            padding: 40px;
+            padding: 30px 20px;
             border-radius: 6px;
-            border-left: 5px solid var(--orange);
-            margin-top: 40px;
+            border-left: 4px solid var(--orange);
+            margin-top: 30px;
         }
-
 
         .normative-box h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
+            font-size: 17px;
+            margin-bottom: 8px;
         }
-
 
         .normative-box p {
             color: #CBD5E1;
-            font-size: 14px;
-            line-height: 1.6;
+            font-size: 13px;
+            line-height: 1.5;
         }
-
 
         /* FOOTER */
         footer {
             background-color: var(--navy);
             color: var(--white);
-            padding: 60px 20px 30px;
+            padding: 45px 16px 25px;
             border-top: 1px solid rgba(255,255,255,0.1);
         }
 
-
         .footer-container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
         }
-
 
         .footer-logo-img {
-            max-width: 180px;
+            max-width: 150px;
             height: auto;
             display: block;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
-
         .footer-col h4 {
-            font-size: 16px;
+            font-size: 14px;
             color: var(--white);
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-transform: uppercase;
             border-left: 3px solid var(--orange);
             padding-left: 8px;
         }
 
-
         .footer-col p, .footer-col a {
             color: var(--steel-light);
-            font-size: 14px;
+            font-size: 13px;
             text-decoration: none;
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
-
 
         .footer-col a:hover {
             color: var(--orange);
         }
 
-
         .footer-bottom {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding-top: 20px;
+            padding-top: 16px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 15px;
-            font-size: 12px;
+            gap: 10px;
+            font-size: 11px;
             color: var(--steel-light);
         }
 
-
-        /* RESPONSIVE DESIGN */
+        /* AJUSTES ESPECÍFICOS PARA PANTALLAS MÓVILES (PRIMERA VISTA) */
         @media (max-width: 768px) {
             .mobile-menu-btn {
                 display: block;
             }
-
 
             .nav-links {
                 display: none;
@@ -571,39 +503,66 @@
                 width: 100%;
                 background-color: rgba(11, 19, 43, 0.98);
                 border-bottom: 2px solid var(--orange);
-                padding: 20px;
-                gap: 18px;
+                padding: 16px;
+                gap: 14px;
                 box-shadow: 0 10px 20px rgba(0,0,0,0.3);
             }
-
 
             .nav-links.active {
                 display: flex;
             }
 
-
             .hero {
-                padding: 40px 20px 55px;
+                padding: 18px 12px 25px;
             }
+
             .hero-logo-img {
-                max-width: 210px;
+                max-width: 125px;
             }
-            .hero h1 {
-                font-size: 26px;
+
+            .hero-badge {
+                font-size: 9px;
+                padding: 3px 10px;
+                margin-bottom: 8px;
             }
+
+            .hero-tagline {
+                font-size: 10.5px;
+                letter-spacing: 1.5px;
+                margin-bottom: 8px;
+            }
+
             .hero-descriptor {
-                font-size: 11px;
+                font-size: 9.5px;
+                padding: 4px 8px;
+                margin-bottom: 10px;
             }
+
             .hero p {
-                font-size: 14px;
+                font-size: 12px;
+                line-height: 1.35;
+                margin-bottom: 14px;
             }
+
+            .btn-primary {
+                padding: 11px 18px;
+                font-size: 13px;
+            }
+
+            .btn-secondary {
+                padding: 9px 18px;
+                font-size: 12px;
+            }
+
             .phase-item {
                 flex-direction: column;
             }
+
             .phase-number {
                 min-width: 100%;
-                padding: 12px;
+                padding: 10px;
             }
+
             .footer-bottom {
                 flex-direction: column;
                 text-align: center;
@@ -612,7 +571,6 @@
     </style>
 </head>
 <body>
-
 
     <!-- NAVEGACIÓN -->
     <header>
@@ -625,11 +583,9 @@
                 </div>
             </a>
 
-
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir Menú">
                 ☰
             </button>
-
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#servicios" onclick="closeMobileMenu()">Servicios</a></li>
@@ -640,8 +596,7 @@
         </div>
     </header>
 
-
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION COMPACTO -->
     <section class="hero">
         <div class="hero-container">
             
@@ -649,10 +604,7 @@
                 <img src="logo_seakra.png" alt="SEAKRA Marine Services Logo" class="hero-logo-img">
             </div>
 
-
-            <br>
             <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
-            <h1>Precisión y seguridad bajo la superficie.</h1>
             <div class="hero-tagline">ENGINEERING EXPERTISE BENEATH THE SURFACE.</div>
             <div class="hero-descriptor">Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques</div>
             <p>Diagnóstico no invasivo con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
@@ -662,7 +614,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- SERVICIOS -->
     <section id="servicios">
@@ -691,7 +642,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- METODOLOGÍA -->
     <section id="metodologia" class="methodology">
@@ -726,7 +676,6 @@
         </div>
     </section>
 
-
     <!-- COBERTURA & NORMATIVA -->
     <section id="cobertura">
         <div class="section-container">
@@ -743,7 +692,6 @@
                 <span class="location-badge">TORREVIEJA</span>
             </div>
 
-
             <div class="normative-box">
                 <h3>Garantía Técnica y Prevención de Riesgos</h3>
                 <p>Todas nuestras operaciones de buceo profesional e inspección robótica se ejecutan en estricta conformidad con el <strong>Real Decreto 550/2020</strong> y la normativa europea de Prevención de Riesgos Laborales (PRL) para entornos portuarios e industriales.</p>
@@ -751,13 +699,12 @@
         </div>
     </section>
 
-
     <!-- FOOTER -->
     <footer id="contacto">
         <div class="footer-container">
             <div class="footer-col">
                 <img src="logo_seakra.png" alt="SEAKRA Logo" class="footer-logo-img">
-                <p style="font-size: 13px;">Contratista especializado en operaciones submarinas, robótica e inspección técnica para el sector marítimo, portuario e industrial.</p>
+                <p style="font-size: 12px;">Contratista especializado en operaciones submarinas, robótica e inspección técnica para el sector marítimo, portuario e industrial.</p>
             </div>
             <div class="footer-col">
                 <h4>Oficina Técnica</h4>
@@ -775,10 +722,9 @@
         </div>
         <div class="footer-bottom">
             <span>© 2026 SEAKRA Marine Services. Todos los derechos reservados.</span>
-            <span>Precisión y seguridad bajo la superficie.</span>
+            <span>ENGINEERING EXPERTISE BENEATH THE SURFACE.</span>
         </div>
     </footer>
-
 
     <!-- SCRIPT MENÚ MÓVIL -->
     <script>
@@ -787,13 +733,11 @@
             nav.classList.toggle('active');
         }
 
-
         function closeMobileMenu() {
             const nav = document.getElementById('navLinks');
             nav.classList.remove('active');
         }
     </script>
-
 
 </body>
 </html>
