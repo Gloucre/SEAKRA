@@ -148,7 +148,7 @@
             background-color: var(--orange-hover) !important;
         }
 
-        /* HERO SECTION CON TONOS EQUILIBRADOS */
+        /* HERO SECTION */
         .hero {
             background: linear-gradient(180deg, var(--navy-dark) 0%, var(--navy) 100%);
             color: var(--white);
@@ -168,22 +168,34 @@
             width: 100%;
         }
 
-        .hero-logo-box {
-            margin-bottom: 16px;
-            display: inline-block;
+        /* MARCA EN TEXTO HERO */
+        .hero-brand-box {
+            margin-bottom: 18px;
         }
 
-        .hero-logo-img {
-            max-width: 210px;
-            width: 100%;
-            height: auto;
+        .hero-brand-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 46px;
+            font-weight: 900;
+            color: var(--orange);
+            letter-spacing: 4px;
+            line-height: 1;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .hero-brand-sub {
             display: block;
-            margin: 0 auto;
-            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
-            mix-blend-mode: screen; /* Integración del logo en el fondo */
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-top: 6px;
         }
 
-        /* INSIGNIA REFINADA CON MENOS NARANJA */
+        /* INSIGNIA Y TEXTOS */
         .hero-badge {
             display: inline-block;
             background-color: rgba(255, 255, 255, 0.06);
@@ -237,7 +249,7 @@
             justify-content: center;
         }
 
-        /* BOTÓN PRINCIPAL NARANJA DE ACCIÓN DIRECTA */
+        /* BOTONES DE ACCIÓN */
         .btn-primary {
             background-color: var(--orange);
             color: var(--white);
@@ -443,7 +455,7 @@
             line-height: 1.5;
         }
 
-        /* SECCIÓN DE FORMULARIO DE CONTACTO DIRECTO */
+        /* FORMULARIO DE CONTACTO */
         .contact-section {
             background-color: var(--light-bg);
             border-top: 1px solid var(--border-color);
@@ -533,12 +545,22 @@
             margin-bottom: 30px;
         }
 
-        .footer-logo-img {
-            max-width: 160px;
-            height: auto;
-            display: block;
+        .footer-brand-title {
+            font-size: 24px;
+            font-weight: 900;
+            color: var(--orange);
+            letter-spacing: 1.5px;
+            line-height: 1;
+        }
+
+        .footer-brand-sub {
+            font-size: 9px;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-top: 3px;
             margin-bottom: 12px;
-            mix-blend-mode: screen;
         }
 
         .footer-col h4 {
@@ -605,8 +627,14 @@
                 padding: 20px 16px;
             }
 
-            .hero-logo-img {
-                max-width: 165px;
+            .hero-brand-title {
+                font-size: 34px;
+                letter-spacing: 3px;
+            }
+
+            .hero-brand-sub {
+                font-size: 10.5px;
+                letter-spacing: 3.5px;
             }
 
             .form-row {
@@ -658,8 +686,10 @@
     <section class="hero">
         <div class="hero-container">
             
-            <div class="hero-logo-box">
-                <img src="logo_seakra.png" alt="SEAKRA Marine Services Logo" class="hero-logo-img">
+            <!-- MARCA RENDERIZADA EN HTML/CSS SIN IMAGEN -->
+            <div class="hero-brand-box">
+                <h1 class="hero-brand-title">SEAKRA</h1>
+                <span class="hero-brand-sub">MARINE SERVICES</span>
             </div>
 
             <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
@@ -667,7 +697,6 @@
             <div class="hero-descriptor">Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques</div>
             <p>Diagnóstico no invasivo con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
             <div class="hero-buttons">
-                <!-- ENLACE DIRECTO AL FORMULARIO DE SOLICITUD -->
                 <a href="#solicitar" class="btn-primary">Solicitar Inspección Técnica</a>
                 <a href="mailto:operaciones@seakra.com" class="btn-secondary">Contacto Directo</a>
             </div>
@@ -811,7 +840,8 @@
     <footer id="contacto">
         <div class="footer-container">
             <div class="footer-col">
-                <img src="logo_seakra.png" alt="SEAKRA Logo" class="footer-logo-img">
+                <div class="footer-brand-title">SEAKRA</div>
+                <div class="footer-brand-sub">MARINE SERVICES</div>
                 <p style="font-size: 13px;">Contratista especializado en operaciones submarinas, robótica e inspección técnica para el sector marítimo, portuario e industrial.</p>
             </div>
             <div class="footer-col">
