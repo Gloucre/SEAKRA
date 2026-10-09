@@ -62,7 +62,7 @@
         .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 10px 16px;
+            padding: 12px 16px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -73,35 +73,25 @@
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
         .nav-logo-img {
-            height: 36px;
+            height: 30px;
             width: auto;
             object-fit: contain;
+            display: block;
         }
 
-        .brand-logo .brand-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-logo .title {
-            font-size: 19px;
+        .nav-brand-acronym {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
             font-weight: 900;
             color: var(--orange);
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             line-height: 1;
-        }
-
-        .brand-logo .sub {
-            font-size: 8px;
-            font-weight: 700;
-            color: var(--white);
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 2px;
+            display: flex;
+            align-items: center;
         }
 
         .mobile-menu-btn {
@@ -157,7 +147,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 24px 16px;
+            padding: 32px 16px;
             text-align: center;
             border-bottom: 3px solid rgba(255, 90, 31, 0.4);
         }
@@ -168,76 +158,86 @@
             width: 100%;
         }
 
-        /* MARCA EN TEXTO HERO */
-        .hero-brand-box {
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            color: #E2E8F0;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
             margin-bottom: 18px;
+        }
+
+        /* MARCA HERO CON BICOLOR SEA + AKRA */
+        .hero-brand-box {
+            margin-bottom: 12px;
         }
 
         .hero-brand-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 46px;
+            font-size: 56px;
             font-weight: 900;
-            color: var(--orange);
-            letter-spacing: 4px;
+            letter-spacing: 3px;
             line-height: 1;
             margin: 0;
             text-transform: uppercase;
+        }
+
+        .hero-brand-title .sea {
+            color: var(--white);
+        }
+
+        .hero-brand-title .akra {
+            color: var(--orange);
         }
 
         .hero-brand-sub {
             display: block;
             font-family: 'Montserrat', sans-serif;
             font-size: 13px;
-            font-weight: 700;
-            color: var(--white);
-            letter-spacing: 5px;
+            font-weight: 800;
+            color: #CBD5E1;
+            letter-spacing: 6px;
             text-transform: uppercase;
-            margin-top: 6px;
-        }
-
-        /* INSIGNIA Y TEXTOS */
-        .hero-badge {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #E2E8F0;
-            padding: 5px 14px;
-            border-radius: 20px;
-            font-size: 10.5px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 14px;
+            margin-top: 8px;
         }
 
         .hero-tagline {
-            font-size: 12.5px;
+            font-size: 13px;
             font-weight: 700;
             color: var(--steel-light);
             letter-spacing: 2px;
-            margin-bottom: 14px;
+            margin-top: 18px;
+            margin-bottom: 18px;
             text-transform: uppercase;
         }
 
-        .hero-descriptor {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+        /* CONTENEDOR GLASSMORPHISM */
+        .hero-descriptor-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            padding: 12px 20px;
             color: #F1F5F9;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-size: 12.5px;
+            font-size: 13.5px;
             font-weight: 600;
-            margin-bottom: 16px;
-            line-height: 1.4;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+            max-width: 680px;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
 
         .hero p {
             font-size: 14px;
             color: #CBD5E1;
-            max-width: 680px;
-            margin: 0 auto 24px;
-            line-height: 1.5;
+            max-width: 660px;
+            margin: 0 auto 26px;
+            line-height: 1.55;
             font-weight: 400;
         }
 
@@ -249,7 +249,7 @@
             justify-content: center;
         }
 
-        /* BOTONES DE ACCIÓN */
+        /* BOTONES CON SOMBRA Y RESPLANDOR */
         .btn-primary {
             background-color: var(--orange);
             color: var(--white);
@@ -261,17 +261,18 @@
             transition: all 0.3s ease;
             width: 100%;
             max-width: 340px;
-            box-shadow: 0 4px 16px rgba(255, 90, 31, 0.35);
+            box-shadow: 0 6px 20px -2px rgba(255, 90, 31, 0.4);
             letter-spacing: 0.5px;
         }
 
         .btn-primary:hover {
             background-color: var(--orange-hover);
             transform: translateY(-2px);
+            box-shadow: 0 8px 24px -2px rgba(255, 90, 31, 0.55);
         }
 
         .btn-secondary {
-            background-color: rgba(255, 255, 255, 0.05);
+            background-color: rgba(255, 255, 255, 0.04);
             color: var(--white);
             border: 1.5px solid var(--steel-light);
             padding: 12px 28px;
@@ -546,20 +547,28 @@
         }
 
         .footer-brand-title {
-            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
             font-weight: 900;
-            color: var(--orange);
             letter-spacing: 1.5px;
             line-height: 1;
+        }
+
+        .footer-brand-title .sea {
+            color: var(--white);
+        }
+
+        .footer-brand-title .akra {
+            color: var(--orange);
         }
 
         .footer-brand-sub {
             font-size: 9px;
             font-weight: 700;
             color: var(--white);
-            letter-spacing: 2.5px;
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-top: 3px;
+            margin-top: 4px;
             margin-bottom: 12px;
         }
 
@@ -624,17 +633,17 @@
 
             .hero {
                 min-height: calc(100dvh - 58px);
-                padding: 20px 16px;
+                padding: 24px 16px;
             }
 
             .hero-brand-title {
-                font-size: 34px;
-                letter-spacing: 3px;
+                font-size: 40px;
+                letter-spacing: 2px;
             }
 
             .hero-brand-sub {
-                font-size: 10.5px;
-                letter-spacing: 3.5px;
+                font-size: 11px;
+                letter-spacing: 4px;
             }
 
             .form-row {
@@ -664,9 +673,7 @@
         <div class="nav-container">
             <a href="#" class="brand-logo">
                 <img src="logo_seakra_solo.png" alt="SEAKRA Isotipo" class="nav-logo-img">
-                <div class="brand-text">
-                    <div class="title">SMS</div>
-                </div>
+                <div class="nav-brand-acronym">SMS</div>
             </a>
 
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Abrir Menú">
@@ -685,16 +692,26 @@
     <section class="hero">
         <div class="hero-container">
             
-            <!-- MARCA RENDERIZADA EN HTML/CSS SIN IMAGEN -->
+            <!-- INSIGNIA DE LOCALIZACIÓN -->
+            <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
+
+            <!-- MARCA CON SEA (BLANCO) + AKRA (NARANJA) -->
             <div class="hero-brand-box">
-                <h1 class="hero-brand-title">SEAKRA</h1>
+                <h1 class="hero-brand-title">
+                    <span class="sea">SEA</span><span class="akra">AKRA</span>
+                </h1>
                 <span class="hero-brand-sub">MARINE SERVICES</span>
             </div>
 
-            <div class="hero-badge">Alicante & Costa Blanca Operativa</div>
             <div class="hero-tagline">EXPERIENCIA EN TRABAJOS BAJO LA SUPERFICIE.</div>
-            <div class="hero-descriptor">Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques</div>
+
+            <!-- DESCRIPCIÓN DE SERVICIOS EN CAJA GLASSMORPHISM -->
+            <div class="hero-descriptor-box">
+                Inspección ROV · Buceo Técnico · Mantenimiento de Infraestructuras y Buques
+            </div>
+
             <p>Diagnóstico no invasivo con robótica subacuática, soporte portuario y mantenimiento industrial bajo la línea de flotación con garantía técnica y estricto cumplimiento normativo.</p>
+
             <div class="hero-buttons">
                 <a href="#solicitar" class="btn-primary">Solicitar Inspección Técnica</a>
                 <a href="mailto:operaciones@seakra.com" class="btn-secondary">Contacto Directo</a>
@@ -839,7 +856,9 @@
     <footer id="contacto">
         <div class="footer-container">
             <div class="footer-col">
-                <div class="footer-brand-title">SEAKRA</div>
+                <div class="footer-brand-title">
+                    <span class="sea">SEA</span><span class="akra">AKRA</span>
+                </div>
                 <div class="footer-brand-sub">MARINE SERVICES</div>
                 <p style="font-size: 13px;">Contratista especializado en operaciones submarinas, robótica e inspección técnica para el sector marítimo, portuario e industrial.</p>
             </div>
