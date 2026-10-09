@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEAKRA Marine Services | Ingeniería e Inspección Submarina ROV</title>
+    <meta name="description" content="Servicios marítimos profesionales, inspección ROV, buceo técnico industrial, limpieza de cascos y fondeos en la provincia de Alicante.">
+    
+    <!-- Google Fonts & Tailwind CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B132B',
+                        orange: '#FF5A1F',
+                        steel: '#7A8795',
+                        lightbg: '#F4F6F9',
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, h4, .font-heading { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-lightbg text-gray-800 antialiased">
+
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-navy text-white sticky top-0 z-50 shadow-md border-b border-orange/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <!-- LOGO -->
+            <div class="flex items-center space-x-3">
+                <a href="#" class="text-2xl font-black tracking-wider text-white font-heading">
+                    SEA<span class="text-orange">KRA</span>
+                    <span class="block text-[10px] tracking-[0.2em] text-steel font-semibold uppercase -mt-1">Marine Services</span>
+                </a>
+            </div>
+
+
+            <!-- DESKTOP NAV -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-gray-300">
+                <a href="#servicios" class="hover:text-orange transition-colors">Servicios</a>
+                <a href="#cobertura" class="hover:text-orange transition-colors">Cobertura</a>
+                <a href="#tecnologia" class="hover:text-orange transition-colors">Tecnología</a>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="flex items-center space-x-1 hover:text-orange transition-colors">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LinkedIn</span>
+                </a>
+            </nav>
+
+
+            <!-- CTA HEADER -->
+            <a href="#contacto" class="bg-orange hover:bg-orange/90 text-white font-bold text-xs uppercase px-5 py-3 rounded tracking-wider transition-all shadow-lg">
+                Contacto Técnico
+            </a>
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-navy text-white py-24 md:py-32 overflow-hidden border-b-4 border-orange">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#7A8795_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-navy border border-steel/40 text-orange font-bold text-xs uppercase px-3 py-1 rounded mb-4 tracking-widest">
+                    Alicante & Costa Blanca Operativa
+                </span>
+                <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6 tracking-tight">
+                    EXPERIENCIA BAJO LA SUPERFICIE.
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 font-light leading-relaxed">
+                    Soluciones integrales de inspección submarina con tecnología ROV, buceo profesional industrial, limpieza de cascos y auditoría de infraestructuras marítimas y offshore.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contacto" class="bg-orange hover:bg-orange/90 text-white font-bold px-8 py-4 rounded text-center transition-all shadow-lg uppercase text-sm tracking-wider">
+                        Solicitar Inspección Técnico-Operativa
+                    </a>
+                    <a href="#servicios" class="border border-steel hover:border-white text-white font-bold px-8 py-4 rounded text-center transition-all text-sm uppercase tracking-wider">
+                        Ver Catálogo de Servicios
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BANNER DE VALORES TÉCNICOS -->
+    <section class="bg-white py-6 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <span class="block text-xl md:text-2xl font-black text-navy font-heading">ROV HD & 4K</span>
+                    <span class="text-xs text-steel font-semibold uppercase tracking-wider">Inspección No Invasiva</span>
+                </div>
+                <div>
+                    <span class="block text-xl md:text-2xl font-black text-navy font-heading">RD 550/2020</span>
+                    <span class="text-xs text-steel font-semibold uppercase tracking-wider">Seguridad Legal & Industrial</span>
+                </div>
+                <div>
+                    <span class="block text-xl md:text-2xl font-black text-navy font-heading">IN SITU</span>
+                    <span class="text-xs text-steel font-semibold uppercase tracking-wider">Mantenimiento de Carena</span>
+                </div>
+                <div>
+                    <span class="block text-xl md:text-2xl font-black text-navy font-heading">PROVINCIA ALICANTE</span>
+                    <span class="text-xs text-steel font-semibold uppercase tracking-wider">Respuesta Rápida</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICIOS PRINCIPALES -->
+    <section id="servicios" class="py-20 bg-lightbg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-black text-navy uppercase tracking-tight mb-4 pl-3 border-l-4 border-orange inline-block">
+                    Capacidad Técnica Operativa
+                </h2>
+                <p class="text-gray-600 font-normal">
+                    Ofrecemos solvencia y precisión técnica para operaciones bajo la superficie en buques, marinas e instalaciones portuarias.
+                </p>
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- SERVICIO 1 -->
+                <div class="bg-white p-8 rounded border-t-4 border-navy shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-navy/10 text-navy flex items-center justify-center rounded mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Inspección & Auditoría ROV</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Evaluación visual de obras vivas, cascos, timones y estructuras con robótica submarina. Emisión de informes en vídeo HD y fotografía para peritajes, aseguradoras y armadores.
+                    </p>
+                </div>
+
+
+                <!-- SERVICIO 2 -->
+                <div class="bg-white p-8 rounded border-t-4 border-orange shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-orange/10 text-orange flex items-center justify-center rounded mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Limpieza de Cascos & Carena</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Limpieza técnica in situ de cascos, hélices, rejillas de aspiración y sustitución de ánodos de sacrificio. Optimización inmediata de velocidad y reducción de consumo de combustible.
+                    </p>
+                </div>
+
+
+                <!-- SERVICIO 3 -->
+                <div class="bg-white p-8 rounded border-t-4 border-navy shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-navy/10 text-navy flex items-center justify-center rounded mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Cabullería & Trenes de Fondeo</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Revisión, mantenimiento, retencionamiento y sustitución de cadenas, grilletes, muertos y líneas de amarre en puertos deportivos, pantalanes y campos de boyas.
+                    </p>
+                </div>
+
+
+                <!-- SERVICIO 4 -->
+                <div class="bg-white p-8 rounded border-t-4 border-navy shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-navy/10 text-navy flex items-center justify-center rounded mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Buceo Profesional Técnico</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                        Intervenciones subacuáticas complejas en espacios confinados, obras hidráulicas, asistencia a buques y operaciones de salvamento/desenredo de transmisiones.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- COBERTURA GEOGRÁFICA -->
+    <section id="cobertura" class="py-16 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="mb-8 md:mb-0 md:max-w-xl">
+                    <h2 class="text-2xl md:text-3xl font-black uppercase mb-4">
+                        Cobertera Operativa en Toda la Provincia de Alicante
+                    </h2>
+                    <p class="text-steel font-light text-sm md:text-base leading-relaxed">
+                        Despliegue ágil con unidad móvil de intervención técnica en los principales puertos y marinas de la Costa Blanca:
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs md:text-sm font-semibold text-gray-300">
+                    <div class="bg-navy/80 border border-steel/30 px-4 py-3 rounded text-center">Puerto de Alicante</div>
+                    <div class="bg-navy/80 border border-steel/30 px-4 py-3 rounded text-center">Marina de Dénia</div>
+                    <div class="bg-navy/80 border border-steel/30 px-4 py-3 rounded text-center">Altea & Campomanes</div>
+                    <div class="bg-navy/80 border border-steel/30 px-4 py-3 rounded text-center">El Campello</div>
+                    <div class="bg-navy/80 border border-steel/30 px-4 py-3 rounded text-center">Santa Pola</div>
+                    <div class="bg-navy/80 border border-steel/30 px-4 py-3 rounded text-center">Torrevieja</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCIÓN CONTACTO / FORMULARIO -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- INFO CONTACTO -->
+                <div>
+                    <h2 class="text-3xl font-black text-navy uppercase tracking-tight mb-6">
+                        Solicitud de Inspección o Presupuesto
+                    </h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Póngase en contacto con nuestra oficina técnica para evaluar sus necesidades operativas, coordinar una inspección ROV o programar trabajos de mantenimiento subacuático.
+                    </p>
+
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-navy text-orange flex items-center justify-center rounded font-bold">
+                                📍
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm uppercase">Base Operativa</h4>
+                                <p class="text-sm text-gray-600">Alicante, Comunidad Valenciana, España</p>
+                            </div>
+                        </div>
+
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-navy text-orange flex items-center justify-center rounded font-bold">
+                                ✉️
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm uppercase">Correo Electrónico</h4>
+                                <p class="text-sm text-gray-600">operaciones@seakra.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-navy text-orange flex items-center justify-center rounded font-bold">
+                                💼
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-navy text-sm uppercase">Perfil Institucional</h4>
+                                <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="text-sm text-orange font-semibold hover:underline">
+                                    Seguir SEAKRA Marine Services en LinkedIn &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- FORMULARIO -->
+                <div class="bg-lightbg p-8 rounded border border-gray-200 shadow-sm">
+                    <!-- Integración con Web3Forms / Formspree -->
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+                        <input type="hidden" name="subject" value="Nueva consulta técnica desde SEAKRA.com">
+
+
+                        <div>
+                            <label class="block text-xs font-bold text-navy uppercase mb-1">Nombre / Empresa</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 rounded bg-white border border-gray-300 text-sm focus:outline-none focus:border-navy" placeholder="Ej. Astilleros Levante / Juan Pérez">
+                        </div>
+
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-navy uppercase mb-1">Email Corporativo</label>
+                                <input type="email" name="email" required class="w-full px-4 py-3 rounded bg-white border border-gray-300 text-sm focus:outline-none focus:border-navy" placeholder="contacto@empresa.com">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-navy uppercase mb-1">Teléfono</label>
+                                <input type="tel" name="phone" class="w-full px-4 py-3 rounded bg-white border border-gray-300 text-sm focus:outline-none focus:border-navy" placeholder="+34 600 000 000">
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <label class="block text-xs font-bold text-navy uppercase mb-1">Servicio Requerido</label>
+                            <select name="service" class="w-full px-4 py-3 rounded bg-white border border-gray-300 text-sm focus:outline-none focus:border-navy">
+                                <option value="ROV">Inspección & Auditoría ROV</option>
+                                <option value="Limpieza">Limpieza de Casco & Carena</option>
+                                <option value="Fondeos">Cabullería & Trenes de Fondeo</option>
+                                <option value="Buceo">Buceo Profesional Técnico</option>
+                                <option value="Otro">Consulta General / Urgencia</option>
+                            </select>
+                        </div>
+
+
+                        <div>
+                            <label class="block text-xs font-bold text-navy uppercase mb-1">Detalle Operativo / Ubicación</label>
+                            <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded bg-white border border-gray-300 text-sm focus:outline-none focus:border-navy" placeholder="Eslora de la embarcación, puerto o tipo de inspección requerida..."></textarea>
+                        </div>
+
+
+                        <button type="submit" class="w-full bg-orange hover:bg-orange/90 text-white font-bold py-4 rounded uppercase text-sm tracking-wider transition-all shadow-md">
+                            Enviar Solicitud Técnica
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-steel py-10 border-t border-steel/20 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <p class="font-bold text-white text-sm">SEAKRA Marine Services</p>
+                <p>Engineering Expertise Beneath the Surface.</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p>&copy; 2026 SEAKRA. Todos los derechos reservados.</p>
+                <p class="mt-1">Base Operativa: Alicante | Comunidad Valenciana</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
